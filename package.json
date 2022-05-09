@@ -1,0 +1,70 @@
+{
+  "name": "tavus-backend",
+  "version": "1.0.0",
+  "description": "It's back-end application for tavus project.",
+  "main": "main.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon main.js",
+    "dev:start": "NODE_ENV=development nodemon main.js",
+    "prod:start": "NODE_ENV=production nodemon main.js",
+    "qa:start": "NODE_ENV=qa nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Arif",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.29.0",
+    "@sendgrid/mail": "^7.4.5",
+    "analytics-node": "^6.0.0",
+    "aws-sdk": "^2.982.0",
+    "axios": "^0.21.1",
+    "child_process": "^1.0.2",
+    "csv-parser": "^3.0.0",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express-fileupload": "^1.2.1",
+    "fast-csv": "^4.3.6",
+    "firebase-admin": "^9.10.0",
+    "geoip-lite": "^1.4.3",
+    "helmet": "^3.21.1",
+    "html-comment-regex": "^1.1.2",
+    "https": "^1.0.0",
+    "is-reachable": "^5.1.1",
+    "is-valid-domain": "^0.1.2",
+    "joi": "^14.3.1",
+    "json2csv": "^5.0.6",
+    "jwks-rsa": "^1.7.0",
+    "log4js": "^6.2.1",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.3",
+    "multer-s3": "^2.9.0",
+    "mysql2": "^2.2.5",
+    "node-cron": "^3.0.0",
+    "nodemon": "^1.19.4",
+    "npm-run-all": "^4.1.5",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "phin": "^3.5.0",
+    "react-confirm-alert": "^2.4.1",
+    "react-helmet": "^6.1.0",
+    "react-scripts": "^4.0.3",
+    "request": "^2.88.0",
+    "sequelize": "^5.22.4"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
+}
