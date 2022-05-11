@@ -51,4 +51,5 @@ jobs:
       run:  aws eks update-kubeconfig --name tavus-eks-cluster --region us-east-2
       
     - name: Deploy Image to Amazon EKS 
-      run:  kubectl apply -f eks/deployment.yaml
+      run: |
+       kubectl apply -f eks/deployment.yaml
