@@ -52,4 +52,5 @@ jobs:
       
     - name: Deploy Image to Amazon EKS 
       run: |
+       sed -i "/rollingStartDate/c \\ \\ \\ \\ \\ \\ \\ \\ rollingStartDate: $(date)" k8s/deployment.yaml
        kubectl apply -f k8s/deployment.yaml
